@@ -6,11 +6,12 @@
     <title>Mon-CV-en-ligne</title>
     <meta name="description" content="Mon CV en ligne de Bouesso Kamba, développeur web et web mobile.">
     <meta name="robots" content="index">
-    <link rel="stylesheet" href="./assets/css/style-start.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style-main.css">
+    <link rel="stylesheet" href="./assets/css/style-start.css">
 </head>
 <body>
+    <section id="cv-container">
         <header class="header-flex">
             <div class="header-photo">
                 <a href="./assets/img/Photo-Personnel.JPG">
@@ -35,117 +36,147 @@
             </div>
         </header>
 
-    <main>
-    <h3>Compétences</h3>
-    <table class="block-gauche">
-        <tr>
-            <td>HTML</td>
-            <td>CSS</td>
-            <td>JavaScript</td>
-            <td>PHP</td>
-        </tr>
+    <main id="cv-main-flex">
+    <div id="bloc-gauche">
+        <h3>Compétences</h3>
+        <table class="block-gauche">
+            <tr class="row-html">
+                <td>HTML</td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence HTML"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence HTML"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence HTML"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence HTML"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence HTML"></div></td>
+            </tr>
+            <tr class="row-css">
+                <td>CSS</td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence CSS"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence CSS"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence CSS"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence CSS"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence CSS"></div></td>
+            </tr>
+            <tr class="row-javascript">
+                <td>JavaScript</td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence JavaScript"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence JavaScript"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence JavaScript"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence JavaScript"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence JavaScript"></div></td>
+            </tr>
+            <tr class="row-php">
+                <td>PHP</td>
+                <td><div class="star-solid"><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence PHP"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence PHP"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence PHP"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence PHP"></div></td>
+                <td><div class="star-solid"><img src="./assets/icons/star-regular-full.svg" alt="Niveau de compétence PHP"></div></td>
+            </tr>
+        </table>
+
+        <h3>Langues</h3>
+        <table class="block-gauche">
+            <tr class="row-langues">
+                <td>Français</td>
+                <td>Langue maternelle</td>
+            </tr>
         
-        <tr>
-            <td><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence HTML"></td>
-            <td><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence CSS"></td>
-            <td><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence JavaScript"></td>
-            <td><img src="./assets/icons/star-solid-full.svg" alt="Niveau de compétence PHP"></td>
-        </tr>
-    </table>
+            <tr class="row-langues">
+                <td>Anglais</td>
+                <td>Professionnel</td>
+            </tr>
 
-    <h3>Langues</h3>
-    <table class="block-gauche">
-        <tr>
-            <td>Français</td>
-            <td>Anglais</td>
-            <td>Allemand</td>
-        </tr>
-        <tr>
-            <td>Langue maternelle</td>
-            <td>Professionnel</td>
-            <td>Notions</td>
-        </tr>
-    </table>
+            <tr class="row-langues">
+                <td>Allemand</td>
+                <td>Notions</td>
+            </tr>
+        </table>
 
-    <h3>Qualités</h3>
-    <ul class="block-gauche">
-        <li>Esprit d'équipe</li>
-        <li>Autonomie</li>
-        <li>Organisation</li>
-        <li>Créativité</li>
-    </ul>
+        <h3>Qualités</h3>
+        <ul class="block-gauche">
+            <li>Esprit d'équipe</li>
+            <li>Autonomie</li>
+            <li>Organisation</li>
+            <li>Créativité</li>
+        </ul>
 
-    <h3>Centres d'intérêt</h3>
-    <ul class="block-gauche">
-        <li>Lecture</li>
-        <li>Voyages</li>
-        <li>Musique</li>
-    </ul>
-
+        <h3>Centres d'intérêt</h3>
+        <ul class="block-gauche">
+            <li>Lecture</li>
+            <li>Voyages</li>
+            <li>Musique</li>
+        </ul>
+    </div>
+    
+    <div id="bloc-droit">
     <h3>Profil</h3>
-    <p>Développeur web passionné par les nouvelles technologies et toujours à la recherche de défis stimulants.</p>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis dolor in neque viverra iaculis. Mauris tempor condimentum nisl sed vestibulum. Donec nec dui non quam accumsan sollicitudin.
+        Integer mattis, lorem id feugiat faucibus, tellus orci pharetra mi, et sollicitudin neque odio et ante. Phasellus sed tortor vel ante aliquet mattis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis dolor in neque viverra iaculis. Mauris tempor condimentum nisl sed vestibulum. Donec nec dui non quam accumsan sollicitudin.
+        Integer mattis, lorem id feugiat faucibus, tellus orci pharetra mi, et sollicitudin neque odio et ante. Phasellus sed tortor vel ante aliquet mattis.</p>
+    
     <h3>Formations</h3>
     <table>
-        <tr>
-            <td>Titre Professionnel DWWM</td>
-            <td>Centre Européen de Formation</td>
-            <td rowspan="2">2026</td>      
+        <tr class="row-survol">
+            <td colspan="2">Titre Professionnel DWWM <br>
+            <span class="etablissement">Centre Européen de Formation</span></td>
+            <td>2026</td>      
         </tr>
-        <tr>
-            <td>Titre Professionnel Gestionnaire de Paie</td>
-            <td>Greta de Créteil</td>
-            <td rowspan="2">2011</td>
+        <tr class="row-survol">
+            <td colspan="2">Titre Professionnel Gestionnaire de Paie <br>
+            <span class="etablissement">Greta de Créteil</span></td>
+            <td>2011</td>
         </tr>
-        <tr>
-            <td>BTS Comptabilité et Gestion des Entreprises</td>
-            <td>Lycée Turgot Paris 3eme</td>
-            <td rowspan="2">2006</td>
+        <tr class="row-survol">
+            <td colspan="2">BTS Comptabilité et Gestion des Entreprises <br>
+            <span class="etablissement">Lycée Turgot Paris 3eme</span></td>
+            <td>2006</td>
         </tr>
-        <tr>
-            <td>Baccalauréat Sciences et Technologies de la Gestion</td>
-            <td>Lycée G de Nerval Noisiel</td>
-            <td rowspan="2">2004</td>
+        <tr class="row-survol">
+            <td colspan="2">Baccalauréat Sciences et Technologies de la Gestion <br>
+            <span class="etablissement">Lycée G de Nerval Noisiel</span></td>
+            <td>2004</td>
         </tr>
     </table>
 
     <h3>Stages</h3>
     <table>
-        <tr>
-            <td>Développeur Web</td>
-            <td>Création & Design</td>
-            <td rowspan="2">2026</td>      
+        <tr class="row-survol">
+            <td colspan="2">Développeur Web <br>
+            <span class="etablissement">Création & Design</span></td>
+            <td>2026</td>      
         </tr>
-        <tr>
-            <td>Assistant Comptable</td>
-            <td>Entreprise ABC</td>
-            <td rowspan="2">2005-2006</td>
+        <tr class="row-survol">
+            <td colspan="2">Assistant Comptable <br>
+            <span class="etablissement">Entreprise ABC</span></td>
+            <td>2005 - 2006</td>
         </tr>
     </table>
 
     <h3>Expériences professionnelles</h3>
     <table>
-        <tr>
-            <td>Business Analyst</td>
-            <td>Entreprise X</td>
-            <td rowspan="2">2013-à aujourd'hui</td>      
+        <tr class="row-survol">
+            <td colspan="2">Business Analyst <br>
+            <span class="etablissement">Entreprise X</span></td>
+            <td>2013 - à aujourd'hui</td>      
         </tr>
-        <tr>
-            <td>Conseiller-Support Client</td>
-            <td>Entreprise X</td>
-            <td rowspan="2">2012-2013</td>
+        <tr class="row-survol">
+            <td colspan="2">Conseiller-Support Client <br>
+            <span class="etablissement">Entreprise X</span></td>
+            <td>2012 - 2013</td>
         </tr>
-        <tr>
-            <td>Conseiller-Support Client</td>
-            <td>Entreprise Y</td>
-            <td rowspan="2">2011-2012</td>
+        <tr class="row-survol">
+            <td colspan="2">Conseiller-Support Client <br>
+            <span class="etablissement">Entreprise Y</span></td>
+            <td>2011 - 2012</td>
         </tr>
-        <tr>
-            <td>Agent d'accueil</td>
-            <td>Entreprise ABC</td>
-            <td rowspan="2">2006-2010</td>
+        <tr class="row-survol">
+            <td colspan="2">Agent d'accueil <br>
+            <span class="etablissement">Entreprise ABC</span></td>
+            <td>2006 - 2010</td>
         </tr>
     </table>
+    </div>
 </main>
 
 <footer>
@@ -159,5 +190,6 @@
     <a href="https://www.instagram.com/">Lien Instagram</a></p>
     <p>Mis à jour le 25/03/2026</p>
 </footer>
+</section>
 </body>
 </html>
