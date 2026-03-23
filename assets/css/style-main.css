@@ -1,0 +1,116 @@
+/* style des titres h3 */
+h3 {
+    font-family: "Lato", sans-serif;
+    text-align: left;
+    line-height: 1;
+    color: #17abb3;
+    margin-top: 30px;
+    border-bottom: 2px solid #f5f5f5;
+    width: 100%;
+    margin-right: 20px;
+}
+
+/* Styles pour le bloc gauche du CV */
+.block-gauche {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Couleur et style des puces et listesdans le bloc gauche */
+.block-gauche li::marker {
+    color: #17abb3;
+    font-size: 1.1em;
+}
+
+.block-gauche ul {
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+
+.block-gauche li {
+    margin-left: 20px;
+    padding-left: 0;
+    text-indent: 0;
+    margin-bottom: 6px;
+    list-style-position: outside;
+    text-align: left;
+    list-style-type: square;
+}
+
+/* Styles pour les tableaux du bloc gauche du CV */
+.block-gauche td:first-child {
+    text-align: left;
+}
+
+.block-gauche td:nth-child(6),
+.block-gauche td:nth-child(2),
+.block-gauche td:nth-child(3),
+.block-gauche td:nth-child(4),
+.block-gauche td:nth-child(5) {
+    text-align: end;
+}
+
+#cv-main-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+#bloc-gauche {
+    width: 30%;
+    background-color: #e3e3e3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+div[class^="star-solid"] img {
+    width: 20px;
+    height: 20px;
+    padding: 0.1px;
+}
+
+/* Positionnement et styles bloc droit du CV */
+#bloc-droit {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#bloc-droit p {
+    text-indent: 20px;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Styles pour seconde ligne des tableaux */
+.etablissement {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+#bloc-droit tr.row-survol td:nth-child(2) {
+    text-align: end;
+    color: #17abb3;
+}
+
+/* Styles pour gérer le survol des lignes du tableau */
+#bloc-droit table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#bloc-droit tr.row-survol:hover td {
+    background-color: #e3e3e3;
+}
+
+#bloc-droit tr.row-survol:hover td:first-child {
+    border-left: 2px solid #17abb3;
+}
+
