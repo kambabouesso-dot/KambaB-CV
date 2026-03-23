@@ -1,3 +1,4 @@
+/* Style général du CV */
 body {
     background-color: #f5f5f5;
     font-family: "Raleway", sans-serif;
@@ -9,6 +10,7 @@ body {
     margin: 0 70px;
 }
 
+/* Style général header*/
 h1 {
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -31,6 +33,7 @@ h2 {
     justify-content: center;
 }
 
+/* Style photo présente dans le header */
 .header-photo {
     flex: 0 0 150px;
     display: flex;
@@ -47,6 +50,7 @@ h2 {
     margin-left: 150px;
 }
 
+/* Style icones et texte d'accompagnement présent dans le header */
 .header-content {
     flex: 1;
     text-align: center;
@@ -74,4 +78,33 @@ div[class^="icon"] img {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Positionnement et styles footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #17abb3;
+    color: #ffffff;
+}
+
+/* Positionnement et styles icones du footer */
+.icon-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div[class^="reseauxsociaux"] img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
+
+div[class^="reseauxsociaux"] img:hover {
+    opacity: 0.9;
 }
